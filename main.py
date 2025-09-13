@@ -180,3 +180,7 @@ elif (elso_dontes == "fekete") and (valasz1.lower() == "fekete"):
         print("Vesztettél!")
     elif (valasz2.lower() == "kisebb") and (uj_lap > elso_dontes1):
         print("Vesztettél!")
+
+
+else:
+    print("Vesztettél!")
