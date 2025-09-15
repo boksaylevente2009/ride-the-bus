@@ -40,7 +40,7 @@ if (elso_dontes == "piros") and (valasz1.lower() == "piros"):
                 print("Profi vagy!")
                 print(f"A téted végső értéke: {bet * 20}")
             else:
-                print("Vesztetél!")
+                print("Vesztettél!")
         elif (uj_lap1 in range(uj_lap, elso_dontes1)) and (valasz3 == "n"):
             print("Vesztettél!")
         elif (uj_lap1 not in range(uj_lap, elso_dontes1)) and (valasz3 == "i"):
@@ -129,7 +129,7 @@ elif (elso_dontes == "fekete") and (valasz1.lower() == "fekete"):
                 print("Profi vagy!")
                 print(f"A téted végső értéke: {bet * 20}")
             else:
-                print("Vesztetél!")
+                print("vesztettél!")
         elif (uj_lap1 in range(uj_lap, elso_dontes1)) and (valasz3 == "n"):
             print("Vesztettél!")
         elif (uj_lap1 not in range(uj_lap, elso_dontes1)) and (valasz3 == "i"):
