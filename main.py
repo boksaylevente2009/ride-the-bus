@@ -47,12 +47,8 @@ while playAgain:
                     print(f"A téted végső értéke: {bet * 20}")
                 else:
                     print("Vesztettél!")
-            elif (uj_lap1 in range(uj_lap, elso_dontes1)) and (valasz3 == "n"):
-                print("Vesztettél!")
-            elif (uj_lap1 not in range(uj_lap, elso_dontes1)) and (valasz3 == "i"):
-                print("Vesztettél!")
             else:
-                print("Rosszat írtál be!")
+                print("Vesztettél!")
         elif (valasz2.lower() == "nagyobb") and (uj_lap > elso_dontes1):
             print(f"A téted jelenlegi értéke: {bet * 3}")
             print(f"Az első lap színe és értéke: piros, {elso_dontes1}")
@@ -83,19 +79,9 @@ while playAgain:
                     print(f"A téted végső értéke: {bet * 20}")
                 else:
                     print("Vesztettél!")
-            elif (uj_lap1 in range(uj_lap, elso_dontes1)) and (valasz3 == "n"):
-                print("Vesztettél!")
-            elif (uj_lap1 not in range(uj_lap, elso_dontes1)) and (valasz3 == "i"):
-                print("Vesztettél!")
             else:
-                print("Rosszat írtál be!")
-        elif ((valasz2.lower() == "nagyobb") or (valasz2.lower() == "kisebb")) and (
-            uj_lap == elso_dontes1
-        ):
-            print("Vesztettél!")
-        elif (valasz2.lower() == "nagyobb") and (uj_lap < elso_dontes1):
-            print("Vesztettél!")
-        elif (valasz2.lower() == "kisebb") and (uj_lap > elso_dontes1):
+                print("Vesztettél!")
+        else:
             print("Vesztettél!")
 
 
@@ -136,12 +122,8 @@ while playAgain:
                     print(f"A téted végső értéke: {bet * 20}")
                 else:
                     print("vesztettél!")
-            elif (uj_lap1 in range(uj_lap, elso_dontes1)) and (valasz3 == "n"):
-                print("Vesztettél!")
-            elif (uj_lap1 not in range(uj_lap, elso_dontes1)) and (valasz3 == "i"):
-                print("Vesztettél!")
             else:
-                print("Rosszat írtál be!")
+                print("Vesztettél!")
         elif (valasz2.lower() == "nagyobb") and (uj_lap > elso_dontes1):
             print(f"A téted jelenlegi értéke: {bet * 3}")
             print(f"Az első lap színe és értéke: fekete, {elso_dontes1}")
@@ -172,19 +154,9 @@ while playAgain:
                     print(f"A téted végső értéke: {bet * 20}")
                 else:
                     print("Vesztettél!")
-            elif (uj_lap1 in range(uj_lap, elso_dontes1)) and (valasz3 == "n"):
-                print("Vesztettél!")
-            elif (uj_lap1 not in range(uj_lap, elso_dontes1)) and (valasz3 == "i"):
-                print("Vesztettél!")
             else:
-                print("Rosszat írtál be!")
-        elif ((valasz2.lower() == "nagyobb") or (valasz2.lower() == "kisebb")) and (
-            uj_lap == elso_dontes1
-        ):
-            print("Vesztettél!")
-        elif (valasz2.lower() == "nagyobb") and (uj_lap < elso_dontes1):
-            print("Vesztettél!")
-        elif (valasz2.lower() == "kisebb") and (uj_lap > elso_dontes1):
+                print("Vesztettél!")
+        else:
             print("Vesztettél!")
     else:
         print("Vesztettél!")
@@ -192,5 +164,6 @@ while playAgain:
     valasz5 = input("Új játék kezdése? (y/n) ")
     if valasz5.lower() == "y":
         playAgain = True
+        print()
     else:
         playAgain = False
